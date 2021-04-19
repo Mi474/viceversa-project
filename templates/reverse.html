@@ -2,10 +2,21 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    a:visited{
+        color:black
+    }
+    </style>
     <title>Vice Versa: Reversed!</title>
 </head>
 <body>
+    <h1>Original text has {{words}} words</h1>
+    {{usertext}}
     <h1>Reversed Text</h1>
     {{reversedtext}}
+    <br><br>
+    <button style="border-radius: 10px;">
+        <a href="{% url 'home' %}" style="text-decoration: none; font-size: large;">Try again</a>
+    </button>
 </body>
 </html>
